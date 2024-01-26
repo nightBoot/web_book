@@ -1,0 +1,29 @@
+# .gitignore
+
+# Python-specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+env.bak/
+
+# IDE
+.vscode/
+
+# Flask specific
+instance/
+*.pyc
+*.pyo
+__pycache__/
+
+# Dependency management
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment
+.env

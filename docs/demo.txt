@@ -1,0 +1,24 @@
+# views.py
+
+from flask import Blueprint, jsonify
+from .models import Book
+
+main = Blueprint('main', __name__)
+
+@main.route('/books', methods=['GET'])
+def get_all_books():
+    books = Book.query.all()
+    book_list = []
+    for book in books:
+        book_data = {
+            'id': book.id,
+            'name': book.name,
+            'author': book.author,
+            'create_date': book.create_date.strftime('%Y-%m-%d %H:%M:%S')
+        }
+        book_list.append(book_data)
+    return jsonify({'books': book_list})
+
+补充完整CRUD的REST API
+
+__pycache__
