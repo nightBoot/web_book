@@ -1,4 +1,4 @@
-好的，下面我将为你提供一个使用 Flask 创建 REST API 操作 MySQL 数据表 `book` 的项目，并提供一些基本的用法和步骤。
+使用 Flask 创建 REST API 操作 MySQL 数据表 `book` 的项目，并提供一些基本的用法和步骤。
 
 ### 步骤：
 
@@ -25,7 +25,7 @@
 
 4. **安装 Flask 和 Flask-SQLAlchemy:**
     ```bash
-    pip install Flask Flask-SQLAlchemy
+    pip install Flask Flask-SQLAlchemy pymysql
     ```
 
 5. **创建主应用文件 `app.py`:**
